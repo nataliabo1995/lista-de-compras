@@ -17,8 +17,7 @@
 body {
     background: var(--degrade-azul);
     background-repeat: no-repeat;
-    height: 100vh;
-
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +25,7 @@ body {
 
 main {
     background-color: var(--neutro);
-    margin-top: 64px;
+    margin: 64px 0;
 
     display: flex;
     flex-direction: column;
@@ -45,6 +44,7 @@ h2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+    margin-top: 20px;
 }
 
 hr {
@@ -100,9 +100,19 @@ form {
     display: flex;
     gap: 8px;
 }
-x
+
+.editar-e-deletar {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+
+}
+
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }
 
 .input-checkbox {
