@@ -38,10 +38,10 @@ export function criarItemDaLista(listaDeCompras, listaDeComprados) {
     const editarEDeletar = document.createElement("div");
     editarEDeletar.classList.add("editar-e-deletar");
     const editar = document.createElement("img");
-    editar.src = "../img/edit.svg";
+    editar.src = "./img/edit.svg";
     editar.alt = "ícone de editar";
     const deletar = document.createElement("img");
-    deletar.src = "../img/delete.svg";
+    deletar.src = "./img/delete.svg";
     deletar.alt = "ícone de deletar";
     editarEDeletar.appendChild(editar);
     editarEDeletar.appendChild(deletar);
