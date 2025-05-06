@@ -68,17 +68,3 @@ export function criarItemDaLista(listaDeCompras, listaDeComprados) {
 
     return itemDaLista;
 }
-
-// Adiciona o event listener para a tecla Enter no inputItem
-inputItem.addEventListener("keypress", function(evento) {
-    if (evento.key === "Enter") {
-        evento.preventDefault(); // Impede o comportamento padrão de submit do formulário
-        const listaDeCompras = document.getElementById("lista-de-compras");
-        const listaDeComprados = document.getElementById("lista-de-comprados");
-        const itemDaLista = criarItemDaLista(listaDeCompras, listaDeComprados);
-        if (itemDaLista) { // Verifica se um novo item foi realmente criado
-            listaDeCompras.appendChild(itemDaLista);
-            verificarListaVazia(listaDeCompras, listaDeComprados);
-        }
-    }
-});
